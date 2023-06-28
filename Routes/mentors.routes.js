@@ -9,6 +9,7 @@ const schema=require("../shared/schema");
 router.get("/",async(req,res)=>{
     let data=await mongo.mentors.find().toArray()
     res.send(data)
+ 
 })
 
 //create new Mentor
